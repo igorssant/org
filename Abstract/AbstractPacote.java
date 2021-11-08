@@ -1,4 +1,4 @@
-package org.abstract_fatory;
+
 
 public abstract class AbstractPacote {
  
