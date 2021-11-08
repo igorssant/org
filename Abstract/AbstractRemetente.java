@@ -2,12 +2,13 @@
 
 public abstract class AbstractRemetente {
     
-    String enderecoDestino;
+    private String enderecoDestino;
 
     public abstract void connect (String enderecoDeDestino);
     public abstract void autenticar ();
     public abstract void send (AbstractPacote dados);
     public abstract void close ();
+
 
     public void setEnderecoDestino(String enderecoDestino)
     {

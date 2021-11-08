@@ -6,8 +6,8 @@ public class RemetenteHTTP extends AbstractRemetente
     @Override
     public void connect(String enderecoDeDestino)
     {
-        System.out.println("Conectado ao endereço " + enderecoDeDestino + ".HTTP");
-        
+        setEnderecoDestino(enderecoDeDestino);
+        System.out.println("Conectado ao endereço " + getEnderecoDestino() + ".HTTP");
     }
 
     @Override
@@ -18,10 +18,9 @@ public class RemetenteHTTP extends AbstractRemetente
     }
 
     @Override
-    public void send(AbstractPacote dados) {
-        
-        
-        
+    public void send(AbstractPacote dados)
+    {
+        System.out.println("Enviando para "+getEnderecoDestino()+"\nMensagem: "+dados.getDados()+" HTTP");
     }
 
     @Override

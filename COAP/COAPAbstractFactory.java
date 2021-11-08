@@ -1,5 +1,18 @@
+public class COAPAbstractFactory extends GUIAbstractFactory
+{
 
+    @Override
+    public AbstractPacote criarPacote()
+    {
 
-public class COAPAbstractFactory extends GUIAbstractFactory {
+        return new PacoteCOAP();
+    }
+
+    @Override
+    public AbstractRemetente criarRemetente()
+    {
+
+        return new RemetenteCOAP();
+    }
     
 }

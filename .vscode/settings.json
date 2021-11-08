@@ -3,6 +3,6 @@
         "Main",
         "HTTP",
         "Abstract",
-        ""
+        "COAP"
     ]
 }
