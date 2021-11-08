@@ -1,9 +1,11 @@
-class Main {
+package org;
 
-	public static void main (String[] args) {
+public class Main {
 
-		System.out.println ("Por enquanto não faz nada!!!");
-
-	}
-
+    public static void main (String[] args) {
+        
+        System.out.println ("ainda não faz nada");
+        
+    }
+    
 }
