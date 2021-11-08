@@ -1,5 +1,3 @@
-
-
 public class FabricaHTTP extends GUIAbstractFactory {
 
     @Override

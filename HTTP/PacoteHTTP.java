@@ -4,9 +4,10 @@ public class PacoteHTTP extends AbstractPacote
 {
 
     @Override
-    public void prepararDados() {
+    public void prepararDados(String dados) {
        
-        System.out.print("Pacote: HTTP");
+        System.out.println("Pacote: HTTP");
+        setDados(dados);
         
     }
 
