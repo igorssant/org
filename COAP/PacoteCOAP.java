@@ -7,9 +7,4 @@ public class PacoteCOAP extends AbstractPacote {
         setDados(dados);
     }
 
-    @Override
-    public void criptografar()
-    {
-        System.out.println("Criptografando dados em COAP");
-    }
 }

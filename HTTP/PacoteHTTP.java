@@ -10,12 +10,5 @@ public class PacoteHTTP extends AbstractPacote
         setDados(dados);
         
     }
-
-    @Override
-    public void criptografar()
-    {
-        System.out.println("Criptografia: HTTP");
-        
-    }
-    
+  
 }
