@@ -10,12 +10,6 @@ public class RemetenteHTTP extends AbstractRemetente
         System.out.println("Conectado ao endereço " + getEnderecoDestino() + ".HTTP");
     }
 
-    @Override
-    public void autenticar() {
-        
-        System.out.println("Autenticando com HTTP");
-        
-    }
 
     @Override
     public void send(AbstractPacote dados)

@@ -1,8 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "criptografar",
         "Main",
         "HTTP",
+        "COAP",
         "Abstract",
-        "COAP"
+        "autenticar"
     ]
 }

@@ -8,10 +8,14 @@ public class Main {
        AbstractPacote qualquerPacote =  qualquer.criarPacote();
        AbstractRemetente qualquerRemetente = qualquer.criarRemetente();
     
-       qualquerPacote.prepararDados("CPF dos brasileiros");
-       qualquerPacote.criptografar();
+      CriptografarComplexo criptografia = new CriptografarComplexo(new Criptografar());
+      AutenticarComplexo autenticar = new AutenticarComplexo(new Autenticar());
 
-       qualquerRemetente.autenticar();
+      criptografia.criptografar();
+      autenticar.autenticar();
+
+       qualquerPacote.prepararDados("CPF dos brasileiros");
+
        qualquerRemetente.connect("www.darkweb.com");
        qualquerRemetente.send(qualquerPacote);
        qualquerRemetente.close();
@@ -23,9 +27,7 @@ public class Main {
        qualquer = new COAPAbstractFactory();
 
        qualquerPacote.prepararDados("Dados bancários");
-       qualquerPacote.criptografar();
 
-       qualquerRemetente.autenticar();
        qualquerRemetente.connect("www.dadosbancarios.com");
        qualquerRemetente.send(qualquerPacote);
        qualquerRemetente.close();       

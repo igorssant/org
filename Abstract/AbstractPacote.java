@@ -1,7 +1,6 @@
 public abstract class AbstractPacote {
  
     public abstract void prepararDados (String dados);
-    public abstract void criptografar ();
 
     private String dados;
 
